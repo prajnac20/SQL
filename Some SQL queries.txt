@@ -1,5 +1,5 @@
-ALTER TABLE `course`.`new_table` 
-RENAME TO  `course`.`course_details` ;
+CREATE TABLE `course`.new_table` (`course_id` int INT NOT NULL,`course_name` VARCHAR(45) NOT NULL, `course_domain`  VARCHAR(45) NOT NULL);
+ALTER TABLE `course`.`new_table`  RENAME TO  `course`.`course_details` ;
 
 CREATE TABLE `course`.`enrollment_details` 
 (
