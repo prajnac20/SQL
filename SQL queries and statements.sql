@@ -19,3 +19,5 @@ CREATE TABLE `course`.`enrollment_details`
 INSERT INTO `course`.`course_details` (`course_id`, `course_name`, `course_domain`) VALUES ('1', 'Naive Bayes Algorithm', 'Machine Learning');
 
 select e.e_name,e.email_id,c.course_name,c.course_domain from enrollment_details e,course_details c where c.course_id = e.course_id;
+
+update `course`.`course_details` set course_id = 5 where course_id = 3;
