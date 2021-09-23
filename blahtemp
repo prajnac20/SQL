@@ -1,0 +1,8 @@
+CREATE TABLE customeraddress (
+customerid int,
+stName varchar(100),
+city varchar(30),
+state varchar(30),
+CONSTRAINT fkcstid FOREIGN KEY (customerid) REFERENCES customer (customerid) ON delete cascade
+);
+
